@@ -46,3 +46,7 @@ io.on("connection", (socket) => {
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+app.get("/", (req, res) => {
+  res.send("CollabEditor server is running!");
+});
+
